@@ -1,8 +1,9 @@
 Source: ca-certificates
 Section: misc
 Priority: optional
-Maintainer: Michael Shuler <michael@pbandjelly.org>
-Uploaders: Raphael Geissert <geissert@debian.org>,
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Michael Shuler <michael@pbandjelly.org>
+XSBC-Pexip-Original-Uploaders: Raphael Geissert <geissert@debian.org>,
            Thijs Kinkhorst <thijs@debian.org>,
            Christian Perrier <bubulle@debian.org>
 Build-Depends: debhelper (>= 8), po-debconf
@@ -10,6 +11,7 @@ Build-Depends-Indep: python
 Standards-Version: 3.9.2
 Vcs-Git: git://git.debian.org/git/collab-maint/ca-certificates.git
 Vcs-Browser: http://git.debian.org/?p=collab-maint/ca-certificates.git
+XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
 
 Package: ca-certificates
 Architecture: all
