@@ -1,3 +1,17 @@
+ca-certificates (20130906ubuntu0.12.04.1) precise-security; urgency=medium
+
+  * Update ca-certificates database to 20130906 (LP: #1257265):
+    - backport changes from the Ubuntu 14.04 20130906ubuntu1 package
+    - No longer ship cacert.org certificates (LP: #1258286)
+    - No longer ship obsolete debconf.org certificates
+    - mozilla/certdata2pem.py: Work around openssl issue by shipping both
+      versions of the same signed roots. Previously, the script would
+      simply overwrite the first one found in the certdata.txt with the
+      later one since they both have the same CKA_LABEL, resulting in
+      identical filenames. (LP: #1014640, LP: #1031333)
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 06 Feb 2014 17:39:43 -0500
+
 ca-certificates (20111211) unstable; urgency=low
 
   * Clarify CA audit note in package description and README.debian. Thanks

@@ -1,7 +1,8 @@
 Source: ca-certificates
 Section: misc
 Priority: optional
-Maintainer: Michael Shuler <michael@pbandjelly.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Michael Shuler <michael@pbandjelly.org>
 Uploaders: Raphael Geissert <geissert@debian.org>,
            Thijs Kinkhorst <thijs@debian.org>,
            Christian Perrier <bubulle@debian.org>
