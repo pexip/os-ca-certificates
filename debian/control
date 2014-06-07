@@ -2,7 +2,8 @@ Source: ca-certificates
 Section: misc
 Priority: optional
 Maintainer: Pexip AS <packaging@pexip.com>
-XSBC-Pexip-Original-Maintainer: Michael Shuler <michael@pbandjelly.org>
+XSBC-Pexip-Original-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Michael Shuler <michael@pbandjelly.org>
 XSBC-Pexip-Original-Uploaders: Raphael Geissert <geissert@debian.org>,
            Thijs Kinkhorst <thijs@debian.org>,
            Christian Perrier <bubulle@debian.org>
