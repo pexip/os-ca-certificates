@@ -1,3 +1,10 @@
+ca-certificates (20141019ubuntu0.12.04.1) precise-security; urgency=medium
+
+  * Update ca-certificates database to 20141019 (LP: #1423904):
+    - backport changes from the Ubuntu 15.04 20141019 package
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 20 Feb 2015 08:21:16 -0500
+
 ca-certificates (20130906ubuntu0.12.04.1) precise-security; urgency=medium
 
   * Update ca-certificates database to 20130906 (LP: #1257265):

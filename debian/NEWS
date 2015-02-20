@@ -1,3 +1,71 @@
+ca-certificates (20140927) unstable; urgency=medium
+
+  Update Mozilla Certificate Authority bundle to version 2.1.
+    The following Certificate Authorities were added (+):
+    + "DigiCert Assured ID Root G2"
+    + "DigiCert Assured ID Root G3"
+    + "DigiCert Global Root G2"
+    + "DigiCert Global Root G3"
+    + "DigiCert Trusted Root G4"
+    + "QuoVadis Root CA 1 G3"
+    + "QuoVadis Root CA 2 G3"
+    + "QuoVadis Root CA 3 G3"
+    + "WoSign"
+    + "WoSign China"
+    The following Certificate Authorities were removed (-):
+    - "Entrust.net Secure Server CA"
+    - "RSA Root Certificate 1"
+    - "TDC Internet Root CA"
+    - "ValiCert Class 1 VA"
+    - "ValiCert Class 2 VA"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Sat, 27 Sep 2014 15:16:51 -0500
+
+ca-certificates (20140325) unstable; urgency=medium
+
+  Update mozilla/certdata.txt to version 1.97+revert_of_936304
+    Mozilla reverted the removal of 1024-bit root certificates for
+    Entrust.net, GTE CyberTrust, and ValiCert (RSA), but did not update the
+    version number in nssckbi.h.
+    Certificates added (+) (none removed):
+    + "Entrust.net Secure Server CA"
+    + "GTE CyberTrust Global Root"
+    + "RSA Root Certificate 1"
+    + "ValiCert Class 1 VA"
+    + "ValiCert Class 2 VA"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Tue, 25 Mar 2014 13:28:19 -0500
+
+ca-certificates (20140223) unstable; urgency=medium
+
+  Debian will no longer ship cacert.org certificates.
+
+  Update mozilla/certdata.txt to version 1.97.
+    Certificates added (+), removed (-), and renamed (~):
+    + "ACCVRAIZ1"
+    + "Atos TrustedRoot 2011"
+    + "E-Tugra Certification Authority"
+    + "SG TRUST SERVICES RACINE"
+    + "StartCom Certification Authority"
+    ~ "StartCom Certification Authority"_2
+      (both StartCom CAs now included with duplicate CKA_LABEL fix)
+    + "T-TeleSec GlobalRoot Class 2"
+    + "TWCA Global Root CA"
+    + "TeliaSonera Root CA v1"
+    + "Verisign Class 3 Public Primary Certification Authority"
+    ~ "Verisign Class 3 Public Primary Certification Authority"_2
+      (both Verisign Class 3 CAs now included with duplicate CKA_LABEL fix)
+    - "Entrust.net Secure Server CA"
+    - "Firmaprofesional Root CA"
+    - "GTE CyberTrust Global Root"
+    - "RSA Root Certificate 1"
+    - "TDC OCES Root CA"
+    - "ValiCert Class 1 VA"
+    - "ValiCert Class 2 VA"
+    - "Wells Fargo Root CA"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Feb 2014 15:21:39 -0600
+
 ca-certificates (20130906) unstable; urgency=low
 
   Update mozilla/certdata.txt to version 1.94
