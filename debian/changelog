@@ -1,3 +1,16 @@
+ca-certificates (20160104ubuntu0.12.04.1pexip1) pexip; urgency=low
+
+  * New upstream release
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 01 Mar 2016 08:30:35 +0000
+
+ca-certificates (20160104ubuntu0.12.04.1) precise-security; urgency=medium
+
+  * Update ca-certificates database to 20160104:
+    - backport changes from the Ubuntu 16.04 LTS 20160104 package
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 08 Feb 2016 10:28:49 -0500
+
 ca-certificates (20141019ubuntu0.12.04.1pexip1) pexip; urgency=low
 
   * New upstream release
