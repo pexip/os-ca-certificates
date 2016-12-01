@@ -42,6 +42,12 @@ install the PEM files into /usr/local/share/ca-certificates/ as above
 and call 'update-ca-certificates' in the package's postinst, and should
 call 'update-ca-certificates --fresh' in the package's postrm.
 
+An example source package for building a local CA certificate package,
+using ca-certificates (>= 20130119) (since it uses triggers) can be
+found in /usr/share/doc/ca-certificates/examples/ca-certificates-local/.
+The README file in the above directory has step-by-step instructions for
+building a local CA certificate package.
+
 How certificates will be accepted into the ca-certificates package
 ------------------------------------------------------------------
 
