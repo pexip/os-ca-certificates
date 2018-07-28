@@ -5,7 +5,6 @@ Maintainer: Pexip AS <packaging@pexip.com>
 XSBC-Pexip-Original-Maintainer: Michael Shuler <michael@pbandjelly.org>
 XSBC-Pexip-Original-Uploaders: Raphael Geissert <geissert@debian.org>,
            Thijs Kinkhorst <thijs@debian.org>,
-           Christian Perrier <bubulle@debian.org>
 Build-Depends: debhelper (>= 9), po-debconf
 Build-Depends-Indep: python, openssl
 Standards-Version: 3.9.8
