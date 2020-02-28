@@ -4,17 +4,17 @@ Priority: optional
 Maintainer: Pexip AS <packaging@pexip.com>
 XSBC-Pexip-Original-Maintainer: Michael Shuler <michael@pbandjelly.org>
 XSBC-Pexip-Original-Uploaders: Raphael Geissert <geissert@debian.org>,
-           Thijs Kinkhorst <thijs@debian.org>,
-Build-Depends: debhelper (>= 10), po-debconf
+           Thijs Kinkhorst <thijs@debian.org>
+Build-Depends: debhelper-compat (= 12), po-debconf
 Build-Depends-Indep: python, openssl
-Standards-Version: 3.9.8
-Vcs-Git: https://anonscm.debian.org/git/collab-maint/ca-certificates.git
-Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/ca-certificates.git
+Standards-Version: 4.3.0.1
+Vcs-Git: https://salsa.debian.org/debian/ca-certificates.git
+Vcs-Browser: https://salsa.debian.org/debian/ca-certificates
 XS-Pexip-Upstream: http://ftp.debian.org/debian/ buster
 
 Package: ca-certificates
 Architecture: all
-Depends: openssl (>= 1.0.0), ${misc:Depends}
+Depends: openssl (>= 1.1.1), ${misc:Depends}
 Enhances: openssl
 Multi-Arch: foreign
 Breaks: ca-certificates-java (<<20121112+nmu1)
