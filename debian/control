@@ -14,7 +14,7 @@ XS-Pexip-Upstream: http://ftp.debian.org/debian/ buster
 
 Package: ca-certificates
 Architecture: all
-Depends: openssl (<< 1.1), ${misc:Depends}
+Depends: openssl, ${misc:Depends}
 Enhances: openssl
 Multi-Arch: foreign
 Breaks: ca-certificates-java (<<20121112+nmu1)

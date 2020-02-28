@@ -1,3 +1,9 @@
+ca-certificates (20190110pexip3) pexip; urgency=medium
+
+  * Remove openssl version constraint
+
+ -- Vincent Sanders <vince@pexip.com>  Fri, 28 Feb 2020 16:23:11 +0000
+
 ca-certificates (20190110pexip2) pexip; urgency=medium
 
   * Change openssl version dependency
