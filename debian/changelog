@@ -1,3 +1,9 @@
+ca-certificates (20190110pexip2) pexip; urgency=medium
+
+  * Change openssl version dependency
+
+ -- Vincent Sanders <vince@pexip.com>  Fri, 28 Feb 2020 15:14:09 +0000
+
 ca-certificates (20190110pexip1) pexip; urgency=medium
 
   * Migrate to Buster
