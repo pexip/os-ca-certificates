@@ -1,6 +1,8 @@
 ca-certificates (20190110pexip3) pexip; urgency=medium
 
   * Remove openssl version constraint
+  * Make update-ca-certificates use c_rehash as openssl 1.0 does
+    not have a rehash command
 
  -- Vincent Sanders <vince@pexip.com>  Fri, 28 Feb 2020 16:23:11 +0000
 

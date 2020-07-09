@@ -183,9 +183,9 @@ then
   done
   if [ "$verbose" = 0 ]
   then
-    openssl rehash . > /dev/null
+    c_rehash . > /dev/null
   else
-    openssl rehash -v .
+    c_rehash -v .
   fi
 fi
 
