@@ -1,8 +1,41 @@
+ca-certificates (20200601~deb10u2pexip1) pexip; urgency=medium
+
+  * New upstream release
+
+ -- Steve McIntyre <steve.mcintyre@pexip.com>  Mon, 01 Feb 2021 11:19:36 +0000
+
+ca-certificates (20200601~deb10u2) buster; urgency=medium
+
+  [ Julien Cristau ]
+  * New maintainer (see #976406)
+
+  [ Michael Shuler ]
+  * mozilla/blacklist:
+    Revert Symantec CA blacklist (#911289). Closes: #962596, #968002.
+    The following root certificates were added back (+):
+    + "GeoTrust Global CA"
+    + "GeoTrust Primary Certification Authority"
+    + "GeoTrust Primary Certification Authority - G2"
+    + "GeoTrust Primary Certification Authority - G3"
+    + "GeoTrust Universal CA"
+    + "thawte Primary Root CA"
+    + "thawte Primary Root CA - G2"
+    + "thawte Primary Root CA - G3"
+    + "VeriSign Class 3 Public Primary Certification Authority - G4"
+    + "VeriSign Class 3 Public Primary Certification Authority - G5"
+    + "VeriSign Universal Root Certification Authority"
+
+  Note: due to bug #743339, CA certificates added back in this version
+  won't automatically be trusted again on upgrade.  Affected users may
+  need to reconfigure the package to restore the desired state.
+
+ -- Julien Cristau <jcristau@debian.org>  Thu, 28 Jan 2021 13:01:43 +0100
+
 ca-certificates (20200601~deb10u1pexip1) pexip; urgency=medium
 
   * New upstream release
 
- -- Steve McIntyre <steve.mcintyre@pexip.com>  Mon, 13 Jul 2018 11:25:49 +0100
+ -- Steve McIntyre <steve.mcintyre@pexip.com>  Mon, 13 Jul 2020 11:25:49 +0100
 
 ca-certificates (20200601~deb10u1) buster; urgency=medium
 
