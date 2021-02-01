@@ -2,9 +2,7 @@ Source: ca-certificates
 Section: misc
 Priority: optional
 Maintainer: Pexip AS <packaging@pexip.com>
-XSBC-Pexip-Original-Maintainer: Michael Shuler <michael@pbandjelly.org>
-XSBC-Pexip-Original-Uploaders: Raphael Geissert <geissert@debian.org>,
-           Thijs Kinkhorst <thijs@debian.org>
+XSBC-Pexip-Original-Maintainer: Julien Cristau <jcristau@debian.org>
 Build-Depends: debhelper-compat (= 12), po-debconf
 Build-Depends-Indep: python, openssl
 Standards-Version: 4.3.0.1
