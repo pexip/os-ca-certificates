@@ -1,3 +1,10 @@
+ca-certificates (20200601~deb10u2pexip3) pexip; urgency=medium
+
+  * mozilla/blacklist:
+    Disable "DST Root CA X3"
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 14 Sep 2021 14:29:32 +0100
+
 ca-certificates (20200601~deb10u2pexip2) pexip; urgency=medium
 
   * New upstream release
