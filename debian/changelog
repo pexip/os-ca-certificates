@@ -1,3 +1,9 @@
+ca-certificates (20210119pexip2) pexip-bullseye; urgency=medium
+
+  * Main bullseye build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Fri, 24 Jun 2022 13:54:54 +0100
+
 ca-certificates (20210119pexip1) pexip; urgency=medium
 
   * Initial bullseye build
