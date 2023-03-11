@@ -3,12 +3,13 @@ Section: misc
 Priority: optional
 Maintainer: Julien Cristau <jcristau@debian.org>
 Build-Depends: debhelper-compat (= 13), po-debconf
-Build-Depends-Indep: python3, openssl
+Build-Depends-Indep: python3, openssl, python3-cryptography
 Standards-Version: 4.5.0.2
 Vcs-Git: https://salsa.debian.org/debian/ca-certificates.git
 Vcs-Browser: https://salsa.debian.org/debian/ca-certificates
 
 Package: ca-certificates
+Priority: standard
 Architecture: all
 Depends: openssl (>= 1.1.1), ${misc:Depends}
 Enhances: openssl
