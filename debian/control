@@ -8,7 +8,7 @@ Build-Depends-Indep: python3, openssl
 Standards-Version: 4.5.0.2
 Vcs-Git: https://salsa.debian.org/debian/ca-certificates.git
 Vcs-Browser: https://salsa.debian.org/debian/ca-certificates
-XS-Pexip-Upstream: http://deb.debian.org/debian/ bullseye
+XS-Pexip-Upstream: http://deb.debian.org/debian/ bookworm
 
 Package: ca-certificates
 Architecture: all
