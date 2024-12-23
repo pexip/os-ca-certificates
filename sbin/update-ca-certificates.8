@@ -25,19 +25,27 @@ This manual page documents briefly the
 .B update-ca-certificates
 command.
 .PP
-\fBupdate-ca-certificates\fP is a program that updates the directory
-/etc/ssl/certs to hold SSL certificates and generates ca-certificates.crt,
-a concatenated single-file list of certificates.
+\fBupdate-ca-certificates\fP is a program that manages the collection of
+TLS certificates for the local machine and generates ca-certificates.crt.
+ca-certificates.crt is a single-file of concatenated certificates.
+The collection of individual certificates is stored at /etc/ssl/certs.
 .PP
-It reads the file /etc/ca-certificates.conf. Each line gives a pathname of
-a CA certificate under /usr/share/ca-certificates that should be trusted.
-Lines that begin with "#" are comment lines and thus ignored.
+The program reads the configuration file /etc/ca-certificates.conf. Each line
+gives a pathname of a CA certificate under /usr/share/ca-certificates that
+should be trusted. Lines that begin with "#" are comment lines and thus ignored.
 Lines that begin with "!" are deselected, causing the deactivation of the CA
-certificate in question. Certificates must have a .crt extension in order to
-be included by update-ca-certificates.
+certificate in question.
 .PP
-Furthermore all certificates with a .crt extension found below
-/usr/local/share/ca-certificates are also included as implicitly trusted.
+Certificates must be in PEM format and have a .crt extension in order to be
+included by update-ca-certificates. Furthermore, all certificates with a .crt
+extension found below /usr/local/share/ca-certificates are also included and
+implicitly trusted.
+.PP
+To add one or more certificates to the machine, copy the certificates in PEM
+format with the *.crt extension to /usr/local/share/ca-certificates. There
+should be one certificate per file, and not multiple certificates in a single
+file. Then run update-ca-certificates to merge the new certificates into the
+existing machine store at /etc/ssl/certs.
 .PP
 Before terminating, \fBupdate-ca-certificates\fP invokes
 \fBrun-parts\fP on /etc/ca-certificates/update.d and calls each hook with
@@ -54,20 +62,37 @@ Be verbose. Output \fBopenssl rehash\fP.
 .TP
 .B \-f, \-\-fresh
 Fresh updates.  Remove symlinks in /etc/ssl/certs directory.
+.TP
+.B \-\-certsconf
+Change the configuration file. By default, the file
+/etc/ca-certificates.conf is used.
+.TP
+.B \-\-certsdir
+Change the certificate directory. By default, the directory
+/usr/share/ca-certificates is used.
+.TP
+.B \-\-localcertsdir
+Change the local certificate directory. By default, the directory
+/usr/local/share/ca-certificates is used.
+.TP
+.B \-\-etccertsdir
+Change the /etc certificate directory. By default, the directory
+/etc/ssl/certs is used.
+.TP
 .SH FILES
 .TP
 .I /etc/ca-certificates.conf
 A configuration file.
 .TP
 .I /etc/ssl/certs/ca-certificates.crt
-A single-file version of CA certificates.  This holds
-all CA certificates that you activated in /etc/ca-certificates.conf.
+A single-file version of CA certificates. This holds all CA certificates
+that were activated in /etc/ca-certificates.conf.
 .TP
 .I /usr/share/ca-certificates
-Directory of CA certificates.
+Directory of CA certificates provided by the distribution.
 .TP
 .I /usr/local/share/ca-certificates
-Directory of local CA certificates (with .crt extension).
+Directory of local CA certificates, with .crt extension, provided by the user.
 .SH SEE ALSO
 .BR openssl (1)
 .SH AUTHOR

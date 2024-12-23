@@ -1,3 +1,59 @@
+ca-certificates (20241223) unstable; urgency=medium
+
+  * Update Mozilla certificate authority bundle to version 2.70.
+    The following certificate authorities were added (+):
+    + Telekom Security TLS ECC Root 2020
+    + Telekom Security TLS RSA Root 2023
+    + FIRMAPROFESIONAL CA ROOT-A WEB
+    + TWCA CYBER Root CA
+    + SecureSign Root CA12
+    + SecureSign Root CA14
+    + SecureSign Root CA15
+    The following certificate authorities were removed (-):
+    - Security Communication Root CA (closes: #1063093)
+  * Add Romanian debconf translation, thanks to Remus-Gabriel Chelu.
+    Closes: #1067042, #1031490.
+
+ -- Julien Cristau <jcristau@debian.org>  Mon, 23 Dec 2024 12:53:45 +0100
+
+ca-certificates (20240203) unstable; urgency=medium
+
+  [ Jeffrey Walton ]
+  * update-ca-certificates man page updates
+  * fix shellcheck warnings (closes: #1058658, #981663)
+
+  [ Gioele Barabucci ]
+  * Use standard dh sequence (closes: #1050112)
+
+  [ Julien Cristau ]
+  * Update Mozilla certificate authority bundle to version 2.64
+    The following certificate authorities were added (+):
+    + Atos TrustedRoot Root CA ECC TLS 2021
+    + Atos TrustedRoot Root CA RSA TLS 2021
+    + BJCA Global Root CA1
+    + BJCA Global Root CA2
+    + CommScope Public Trust ECC Root-01
+    + CommScope Public Trust ECC Root-02
+    + CommScope Public Trust RSA Root-01
+    + CommScope Public Trust RSA Root-02
+    + Sectigo Public Server Authentication Root E46
+    + Sectigo Public Server Authentication Root R46
+    + SSL.com TLS ECC Root CA 2022
+    + SSL.com TLS RSA Root CA 2022
+    + TrustAsia Global Root CA G3
+    + TrustAsia Global Root CA G4
+    The following certificate authorities were removed (-):
+    - Autoridad de Certificacion Firmaprofesional CIF A62634068
+    - E-Tugra Certification Authority (closes: #1032916)
+    - E-Tugra Global Root CA ECC v3
+    - E-Tugra Global Root CA RSA v3
+    - Hongkong Post Root CA 1
+    - TrustCor ECA-1
+    - TrustCor RootCert CA-1
+    - TrustCor RootCert CA-2 (closes: #1023945)
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 04 Feb 2024 10:41:43 +0100
+
 ca-certificates (20230311) unstable; urgency=medium
 
   [ Đoàn Trần Công Danh ]
