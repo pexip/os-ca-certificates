@@ -59,6 +59,14 @@ do
     --hooksdir)
       shift
       HOOKSDIR="$1";;
+    --sysroot)
+      shift
+      SYSROOT="$1"
+      CERTSCONF="$1/${CERTSCONF}"
+      CERTSDIR="$1/${CERTSDIR}"
+      LOCALCERTSDIR="$1/${LOCALCERTSDIR}"
+      ETCCERTSDIR="$1/${ETCCERTSDIR}"
+      HOOKSDIR="$1/${HOOKSDIR}";;
     --help|-h|*)
       echo "$0: [--verbose] [--fresh]"
       exit;;

@@ -1,3 +1,21 @@
+ca-certificates (20250419) unstable; urgency=medium
+
+  [ Alexander Kanavin ]
+  * update-ca-certificates: add a --sysroot option
+
+  [ Julien Cristau ]
+  * Update Mozilla certificate authority bundle to version 2.74.
+    The following certificate authorities were added (+):
+    + D-TRUST BR Root CA 2 2023
+    + D-TRUST EV Root CA 2 2023
+    The following certificate authorities were removed (-):
+    - Entrust Root Certification Authority - G4
+    - SecureSign RootCA11
+    - Security Communication RootCA3
+    - SwissSign Silver CA - G2
+
+ -- Julien Cristau <jcristau@debian.org>  Sat, 19 Apr 2025 09:25:37 +0200
+
 ca-certificates (20241223) unstable; urgency=medium
 
   * Update Mozilla certificate authority bundle to version 2.70.
