@@ -1,3 +1,13 @@
+ca-certificates (20230311+deb12u1) bookworm; urgency=medium
+
+  * Add 2 Sectigo roots that are in active use and causing
+    interop issues; these roots were included in the Mozilla bundle
+    version 2.62 (closes: #1095913):
+    + Sectigo Public Server Authentication Root E46
+    + Sectigo Public Server Authentication Root R46
+
+ -- Julien Cristau <jcristau@debian.org>  Fri, 13 Jun 2025 10:03:42 +0200
+
 ca-certificates (20230311) unstable; urgency=medium
 
   [ Đoàn Trần Công Danh ]
