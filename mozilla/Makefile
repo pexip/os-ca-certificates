@@ -4,6 +4,7 @@
 
 all:
 	python3 certdata2pem.py
+	cp extra/*.crt .
 
 clean:
 	-rm -f *.crt
