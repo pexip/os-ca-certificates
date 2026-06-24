@@ -14,7 +14,7 @@ XS-Pexip-Upstream: http://deb.debian.org/debian/ trixie
 Package: ca-certificates
 Priority: standard
 Architecture: all
-Depends: openssl, ${misc:Depends}
+Depends: openssl (>= 1.1.1), ${misc:Depends}
 Enhances: openssl
 Multi-Arch: foreign
 Breaks: ca-certificates-java (<<20121112+nmu1)
